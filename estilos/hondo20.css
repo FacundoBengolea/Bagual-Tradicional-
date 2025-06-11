@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+/*header*/
+header{
+    display: flex;
+    background-color: #4b6075;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    border: #4b6075;
+    color: #efefef;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 30px 9px black;
+}
+.animacion{
+    background-color: #4b6075;
+    width: 10%;
+    animation-name: barra;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+.bagual{
+    margin: auto;
+    margin-top: 0;
+    color: white;
+    font-size: 1.3rem;
+}
+.Tradicional{
+    position: absolute;
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: white;
+}
+@keyframes barra {
+    from {
+        background-color: white;
+        width: 0%;
+    }
+    to {
+        background-color: #4b6075;
+        width: 100%;
+        border-radius: 100px 0px 0px 100px;
+    }
+}
+
+.logo{
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    border: solid white;
+    z-index: 10;
+    box-shadow: 0px 6px 10px black;
+}
+nav a{
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+.productos{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 100px;
+    gap: 40px;
+}
+.caracteristicas{
+    box-shadow: 0px 0px 4px #d0d3d4;
+    width: 400px;
+    background-color:#f7f9f9;
+}
+.precio{
+    text-decoration: line-through;
+    color: #c0392b;
+}
+p{
+    color: #797d7f ;
+    font-weight: 600;
+}
+section{
+    display: flex;
+    width: 600px;
+    height: 500px;
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 400px;
+    filter: drop-shadow(0px 0px 30px black );
+    box-shadow: 0px 0px 20px black;
+    border: solid;
+}

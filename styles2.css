@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    background-color: #e2dbcf;
+}
+header{
+    display: flex;
+    background-color: #4b6075;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+}
+.animacion{
+    background-color: #4b6075;
+    width: 10%;
+    animation-name: barra;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+.titulo1{
+    margin-top: 0px;
+}
+.bagual{
+    margin-left: 5px;
+    font-size: 20px;
+}
+.Tradicional{
+    margin-top: 0px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+p{
+    font-style: italic;
+}
+@keyframes barra{
+    from{
+        background-color: white;
+        width: 0%;
+    }
+    to{
+        background-color: #4b6075;
+        width: 100%;
+    }
+}
+.button{
+    font-size: 3rem;
+    color: rgb(50, 34, 18);
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+}
+.logo{
+    width: 80px;
+    border-radius: 100%;
+    margin: 10px 20px;
+    max-width: 100px;
+    border:solid white
+
+}
+header .header-checkbox{
+    display: none;
+}
+.header-list{
+    margin: auto;
+    justify-content: space-between;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav-list{
+    display: none;
+    background-color: #efe;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+.header-checkbox:checked ~ .nav-list{
+    display: flex;
+}
+.header-link a{
+    text-decoration: none;
+    color: black;
+}
+.header-link{
+    list-style: none;
+}
+.header-link a:hover{
+    padding: 10px;
+    border-radius: 10px ;
+    background-color: #48e;
+    color: #efef;
+}
+.img{
+    width: 200px;
+    border-radius: 10px;
+}
+.section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    container-name: section;
+    container-type: inline-size;
+}
+.Productos{
+    background-color: #808b96;
+    box-shadow: 10px 0px 10px black;
+    width: 200px;
+    max-width: 100%;
+    height: 300px;
+    text-align:left;
+    border-radius: 10px;
+    margin-bottom:25px ;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.tablas, .plato{
+    max-width: 800px;
+    gap: 20px;
+}
+.cuencos{
+    max-width: 527px;
+    gap: 20px;
+}
+.combo{
+    max-width: 250px;
+}
+@container section (min-width:700px){
+    .tablas, .cuencos, .plato, .combo{
+        display: block;
+        display: flex;
+    }
+}
+
+

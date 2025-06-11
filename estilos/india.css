@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+/*header*/
+header{
+    box-shadow: 0px 15px 18px rgba(0, 0, 0, 0.6);
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #17202a;
+    color: #efefef;
+    padding: 1px;
+    z-index: 10;
+}
+.Bagual{
+    color:white;
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+.Tradicional{
+    color:white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-style: italic;
+}
+nav a{
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.caracteristicas{
+    box-shadow: 0px 0px 4px #d0d3d4;
+    width: 350px;
+    height: 300px;
+    background-color:#f7f9f9;
+}
+.precio{
+    text-decoration: line-through;
+    color: #c0392b;
+}
+p{
+    color: #797d7f ;
+    font-weight: 600;
+}
+img{
+    width: 350px;
+    display: inline-block;
+}
+#contenedor-carrusel{
+    height: 350px;
+    overflow: hidden;
+}
+.carrusel{
+position: relative;
+}
+
+.flecha-iz{
+    position: absolute;
+    top: 48%;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: transparent;
+}
+.flecha-iz:active{
+    background-color:  #cccccd;
+}
+.flecha-de{
+    background-color: transparent;
+    position: absolute;
+    top:48%;
+    
+    padding: 10px;
+    border-radius: 100%;
+    right: 5px;
+}
+.flecha-de:active{
+    background-color: #cccccd;
+}
